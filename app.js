@@ -34,5 +34,5 @@ app.get("/login", (req,res) => {
 
 })
 
-app.listen(3000, () => console.log("Se ha levantado el servidor"));
+app.listen(process.env.port || 3000, () => console.log("Se ha levantado el servidor"));
 
